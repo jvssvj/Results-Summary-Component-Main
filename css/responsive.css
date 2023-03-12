@@ -7,7 +7,6 @@
     }
     .card {
         flex-direction: column;
-        margin-top: -7em;
     }
 
     .card-result {
