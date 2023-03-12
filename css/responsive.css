@@ -2,11 +2,10 @@
     body {
         overflow: auto;
     }
-    .container {
-        height: 100%;
-    }
+    
     .card {
         flex-direction: column;
+        margin-bottom: 8em;
     }
 
     .card-result {
@@ -49,7 +48,7 @@
     }
 
     .attribution {
-        margin-top: 7em;
+        margin-top: 2em;
         padding-bottom: 20px;
     }
 }
