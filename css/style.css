@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Hanken Grotesk', sans-serif;
-    background-color: hsl(221, 100%, 96%);
+    background-color: hsl(0, 0%, 100%);
     overflow: hidden;
 }
 
@@ -23,6 +23,7 @@ body {
     display: flex;
     background-color: hsl(0, 0%, 100%);
     border-radius: 23px;
+    box-shadow: 0 0 37px rgba(0, 0, 0, 0.199);
 }
 
 .card-result {
