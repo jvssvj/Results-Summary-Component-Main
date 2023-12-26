@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="src/index.js" defer></script>
+
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+  <section class="card__container">
+    <section  class="card__result">
+      <div class="card__result__txt">
+        <h1 class="card__result__title" >Your Result</h1>
+        <div class="card__result__circle">
+          <strong class="card__result__circle__score">76</strong>
+          <span class="card__result__circle__of">of 100</span>
+        </div>
+        <h2 class="card__result__great">Great</h2>
+        <p class="card__result__great__paragraph">You scored higher than 65% of the people who have taken these tests.<p>
+      </div>
+    </section>
+    <section class="card__summary">
+      <div class="card__summary__txt">
+        <h3 class="card__summary__title">Summary</h3>
+        <div class="card__summary__result">
+          <ul class="card__summary__result__ul">
+            <li class="reaction">
+              <div class="reaction__title__div">
+                <img class="reaction__title__img" src="" alt="Reaction Image">
+                <span class="reaction__title__txt">Reaction</span>
+              </div>
+              <div class="reaction__result">
+                <strong class="reaction__score"></strong>
+                <span class="slash">/</span>
+                <p class="reaction__of">100</p>
+              </div>
+            </li>
+            <li class="memory">
+              <div class="memory__title__div">
+                <img class="memory__title__img" src="" alt="Memory Image">
+                <span class="memory__title__txt">Memory</span>
+              </div>
+              <div class="memory__result">
+                <strong class="memory__score"></strong>
+                <span class="slash">/</span>
+                <p class="memory__of">100</p>
+              </div>
+            </li>
+            <li class="verbal">
+              <div class="verbal__title__div">
+                <img class="verbal__title__img" src="" alt="Verbal Image">
+                <span class="verbal__title__txt">Verbal</span>
+              </div>
+              <div class="verbal__result">
+                <strong class="verbal__score"></strong>
+                <span class="slash">/</span>
+                <p class="verbal__of">100</p>
+              </div>
+            </li>
+            <li class="visual">
+              <div class="visual__title__div">
+                <img class="visual__title__img" src="" alt="Visual Image">
+                <span class="visual__title__txt">Visual</span>
+              </div>
+              <div class="visual__result">
+                <strong class="visual__score"></strong>
+                <span class="slash">/</span>
+                <p class="visual__of">100</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <input id="continue--btn" type="button" value="Continue">
+      </div>
+    </section>
+  </section>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a>
+  </footer>
+</body>
+</html>

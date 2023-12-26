@@ -1,0 +1,50 @@
+@media (max-width:645px) {
+    body {
+        align-items: start;
+    }
+    .card__container {
+        flex-direction: column;
+        height: unset;
+        box-shadow: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .card__summary,
+    .card__result {
+        padding: 2em;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .card__summary,
+    .card__result,
+    .reaction,
+    .memory,
+    .verbal,
+    .visual{
+        max-width: unset;
+    }
+
+    #continue--btn:hover {
+        background-image: unset
+    }
+
+    .attribution {
+        margin-top: 70em;
+    }
+}
+
+@media(max-width:420px) {
+    body {
+        font-size: .95rem;
+    }
+
+    .card__result__title,
+    .card__summary__title {
+        font-size: 1.3rem;
+    }
+
+    .card__result__great {
+        font-size: 1.5rem;
+    }
+}
