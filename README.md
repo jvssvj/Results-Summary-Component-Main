@@ -35,7 +35,7 @@
 |||
 | :----- | :----- |
 | Solution URL: | [Frontend Mentor - Results Summary Component Main](https://www.frontendmentor.io/solutions/results-summary-component-main-ugOYwo9hJ0) |
-| Live Site URL: | <a target href="https://jvssvj.github.io/Testimonials-Grid-Section-Main/" target="_blank">Results Summary Component Main</a>
+| Live Site URL: | <a target href="https://jvssvj.github.io/Results-Summary-Component-Main/" target="_blank">Results Summary Component Main</a>
 |||
 
 <br>
