@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    /* ### Primary */
+    --Light__red: hsl(0, 100%, 67%);
+    --Orangey__yellow: hsl(39, 100%, 56%);
+    --Green__teal: hsl(166, 100%, 37%);
+    --Cobalt__blue: hsl(234, 85%, 45%);
+    --Reaction__BG__Color:hsla(0, 100%, 67%, 0.13);
+    --Memory__BG__Color: hsl(39, 100%, 56%, 0.13);
+    --Verbal__BG__Color: hsl(166, 100%, 37%, 0.13);
+    --Visual__BG__Color:hsl(234, 85%, 45%, 0.13);
+
+    /* ## Gradients */
+    --Light__slate__blue__background: hsl(252, 100%, 67%);
+    --Light__royal__blue__background: hsl(241, 81%, 54%);
+
+    --Violet__blue__circle: hsla(256, 72%, 46%, 1);
+    --Persian__blue__circle: hsla(241, 72%, 46%, 0);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale__blue: hsl(221, 100%, 96%);
+    --Light__lavender: hsl(241, 100%, 89%);
+    --Dark__gray__blue: hsl(224, 30%, 27%);
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--White);
+    font-size: 1em;
+    margin: 0em 1em;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 737px;
+    height: 515px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.13) 0px 30px 60px -30px;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0em 1em 0em 1em;
+}
+
+.component__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(var(--Light__slate__blue__background), var(--Light__royal__blue__background));
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 368px;
+    height: 100%;
+    padding: 2.71em 4em;
+}
+
+.component__result__title {
+    color: var(--Light__lavender);
+    font-size: 1.5rem;
+}
+
+.component__result__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    width: 203px;
+    height: 203px;
+    border-radius: 100%;
+    margin-top: 2em;
+    background-image: linear-gradient(var(--Violet__blue__circle), var(--Persian__blue__circle));
+}
+
+.component__result__circle__score {
+    font-size: 3.8rem;
+    color: var(--White);
+}
+
+.component__result__circle__of {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    color: var(--Light__lavender);
+}
+
+.component__result__great {
+    margin-top: 1em;
+    color: var(--White);
+    font-size: 2.03rem;
+}
+
+.component__result__info {
+    color: var(--Light__lavender);
+    margin-top: 1.2rem;
+}
+
+.component__summary {
+    width: 100%;
+    max-width: 369px;
+    padding: 2.8em 2.5em;
+    height: 100%;
+}
+
+.component__summary__title {
+    font-size: 1.5rem;
+    color: var(--Dark__gray__blue)
+}
+
+.component__summary__results {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.card--summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding: 1em;
+    border-radius: .5rem;
+
+}
+
+.reaction__icon,
+.memory__icon,
+.verbal__icon,
+.visual__icon {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.component__sumary__reaction {
+    background-color: var(--Reaction__BG__Color);
+}
+
+.component__sumary__memory {
+    background-color: var(--Memory__BG__Color);
+}
+
+.component__sumary__verbal {
+    background-color: var(--Verbal__BG__Color);
+}
+
+.component__sumary__visual {
+    background-color: var(--Visual__BG__Color);
+}
+
+.reaction__title {
+    color: var(--Light__red);
+}
+
+.memory__title {
+    color: var(--Orangey__yellow);
+}
+
+.verbal__title {
+    color: var(--Green__teal);
+}
+
+.visual__title {
+    color: var(--Cobalt__blue);
+}
+
+.reaction__score,
+.memory__score,
+.verbal__score,
+.visual__score {
+    color: var(--Dark__gray__blue);
+}
+
+.reaction__of,
+.memory__of,
+.verbal__of,
+.visual__of,
+.slash {
+    color: var(--Dark__gray__blue);
+}
+
+#continue--btn {
+    width: 100%;
+    margin-top: 1.4em;
+    height: 55px;
+    background-color: var(--Dark__gray__blue);
+    border-radius: 40px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition:.5s ease;
+}
+
+#continue--btn:hover {
+    background-color: var(--Light__royal__blue__background);
+}
+
+#continue--btn:active {
+    transform: scale(0.97);
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    margin-top: 57em;
+    padding: .5rem;
+    color: var(--Dark__gray__blue);
+}
+
+.attribution a {
+    color: var(--Cobalt__blue);
+}
